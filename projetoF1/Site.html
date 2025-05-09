@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 SITE AO VIVO</title>
+    
+    <!-- Link para o CSS local -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons (só precisa de um dos dois links, escolhe um) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header class="fix-header">
+        <img src="https://media.formula1.com/f_auto,c_limit,w_3840,q_auto/common/logos/f1_logo_white_pssdvx" class="errado">
+
+        <!-- ERRO: Tu tinha um </div> aqui que não fecha nada, então tirei -->
+        
+        <ul class="ul-fix">
+            <li><a href="#"><span class="headf1-text"><i class='bx bxs-user-account'></i> ENTRAR</span></a></li>
+            <li><a href="#"><span class="headf1-text"><i class='bx bxs-phone'></i> CONTATO</span></a></li>
+            <li>
+                <form>
+                    <input type="text" name="pesquisa" placeholder="Digite sua pesquisa">
+                </form>
+            </li>
+        </ul>
+    </header>
+
+    <div id="background-f1"></div>
+
+    <main>
+        <aside>
+            <h2><span class="assine-ja">VEJA A F1 AO VIVO</span></h2>
+            <h2>DO SEU JEITO</h2>
+            <p><span class="desc-fix">Assista a todas as sessões da F1 ao vivo ou com as gravações no seu aparelho de preferência.</span></p>
+
+            <hr>
+
+            <!-- ERRO: <h3> e <p> não devem estar dentro de <table> sem <tr><td> -->
+            <div class="fix-tvpro">
+                <h3><img src="https://media.formula1.com/f_auto,c_limit,w_1200,q_auto/common/logos/f1_logo_red" class="img-buy"> TV Pro</h3>
+                <p><span class="preco-199">R$199,99</span></p>
+                <p><span class="ano">/ ANO</span></p>
+                <hr>
+                <p><span class="apos-ano-desc">Acompanhe todos os GPs ao vivo e com as gravações</span></p>
+            </div>
+
+            <form>
+                <input type="email" placeholder="example@gmail.com">
+                <input type="password" placeholder="password123">
+                <input type="submit" value="ASSINAR AGORA">
+            </form>
+        </aside>
+    </main>
+</body>
+</html>
